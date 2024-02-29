@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+#proposal {
+	text-align: center;
+	margin-top: 100px;
+}
+#proposal h1 {
+	font-size: 5vw;
+    color: white;
+   font-weight: 900;
+}
+
+#proposal button {
+	font-size: 2em;
+	padding: 10px 30px;
+	margin: 0 10px;
+	border-radius: 10px;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    #proposal h1 {
+        font-size: 11vw;
+        margin-top: -2vh;
+    }
+}
+
+#yes {
+	background-color: green;
+}
+
+#no {
+	background-color: rgb(116, 5, 5);
+}
+
+#no:active {
+	transform: scale(1.2);
+}
+.main{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+body{
+    background-image: url(https://images.pexels.com/photos/5874620/pexels-photo-5874620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+    </style>
+    <body>
+<div class="main">
+	<div id="proposal">
+		<h1>Will you marry me?</h1>
+		<button id="yes">Yes</button>
+		<button id="no">No</button>
+	</div>
+</div>
+        <script>
+           const yesButton = document.getElementById('yes');
+const noButton = document.getElementById('no');
+
+noButton.addEventListener('click', () => {
+	yesButton.style.fontSize = '5em';
+});
+
+const button = document.getElementById('yes');
+
+button.addEventListener('click', function() {
+  alert('Shadi Mubarak Ho !');
+});
+        </script>
+    </body>
+</html>
